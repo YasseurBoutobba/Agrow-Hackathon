@@ -1,0 +1,67 @@
+.welcome{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+    padding: 40px 0 0;
+    margin-bottom: 60px;
+}
+
+.welcome::before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 60px;
+    background-color: var(--second-green-clr);
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.welcome .text{
+    width: 50%;
+}
+.welcome .text h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+.welcome .text p{
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+.welcome .text .join{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.welcome .text .join span{
+    text-decoration: underline;
+    transition: .3s;
+    cursor: pointer;
+}
+.welcome .text .join span:hover{
+    color: var(--main-green-clr);
+}
+.welcome .img{
+    width: 50%;
+}
+.welcome .img img{
+    width: 100%;
+    object-fit: fill;
+}
+@media (max-width:992px){
+    .welcome{
+        flex-direction: column;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .welcome .text{
+        width: 100%;
+    }
+    .welcome .img{
+        width: 100%;
+    }
+  }
