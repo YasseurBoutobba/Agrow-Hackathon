@@ -2,11 +2,19 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
-    colors: {
-      primary: "hsla(210, 44%, 94%, 1)",
-      accent: "hsla(229, 100%, 66%, 1)",
-      blue: "hsla(197, 100%, 61%, 1)",
+    extend: {
+      colors:{
+        primary: '#62C370',
+        navbg: '#F5F5F5',
+        nightblue: "hsla(214, 84%, 15%, 1)",
+        postbg: '#F6F7F9',
+        lightgrey:'#696969',
+        lightgreen: '#E6F0E8',
+        beige: '#D7DCD9',
+        bluegrey: '808006'
+
+      }
     },
   },
   plugins: [],
-};
+}
