@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500&display=swap');
+/* Set Variables  */
+:root{
+    --main-green-clr: #62C370;
+    --main-black-clr: #333;
+    --p-grey-clr: #555;
+    --second-green-clr: #EAFFE4;
+}
+/* Global Styles  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--main-black-clr);
+}
+button{
+    color: var(--main-black-clr);
+}
+h1, h2{
+    color: var(--main-black-clr);
+}
+p{
+    color: var(--p-grey-clr);
+}
+
+
+/* Containers   */
+.container{
+    margin: auto;
+}
+
+@media (min-width:768px){
+    .container{
+        width: 750px;
+    }
+  }
+  @media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+  }
+  @media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+  }
+  @media (min-width:1400px){
+    .container{
+        width: 1260px;
+    }
+  }
+/* Repeted Styles  */
+/* Component Styles  */
+button.btn{
+    border: 0;
+    color: white;
+    background-color: var(--main-green-clr);
+    font-size: 1.1rem;
+    padding: .6rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+button.btn:hover{
+    transform: scale(1.04);
+}
+h2.title{
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 10px;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+h2.title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--main-green-clr);
+}
+h2.title span{
+    color: var(--main-green-clr);
+}

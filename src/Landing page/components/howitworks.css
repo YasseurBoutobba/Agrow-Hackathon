@@ -1,0 +1,37 @@
+.how-it-works{
+    padding: 50px 0;
+}
+.how-it-works .steps{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+.how-it-works .steps .step{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    padding: 0 10px;
+}
+.how-it-works .steps .step .icon{
+    font-size: 4.2rem;
+    color: var(--main-green-clr);
+    font-weight: 400;
+}
+.how-it-works .steps .step h2{
+    font-weight: 500;
+}
+@media (max-width:992px){
+    .how-it-works{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .how-it-works .steps{
+        flex-direction: column;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+  }

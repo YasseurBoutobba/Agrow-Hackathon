@@ -1,0 +1,35 @@
+.about{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.about .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: calc(50% - 40px);
+}
+.about .text p{
+    line-height: 1.9;
+}
+.about .img{
+    width: 50%;
+}
+.about .img img{
+    width: 100%;
+    object-fit: cover;
+}
+@media (max-width:992px){
+    .about{
+        flex-direction: column;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .about .text{
+        width: 100%;
+    }
+    .about .img{
+        width: 100%;
+    }
+  }
