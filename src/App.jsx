@@ -1,8 +1,11 @@
 import React from 'react';
 import { createRoot } from "react-dom/client";
-import './index.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from './Landing page/Main';
+import Sign from './Sign up/SignUp';
+import Home from './Home page/Home';
+import MainApp from './Home page/MainApp';
+import './index.css';
 
 
 const App = () => {
@@ -11,6 +14,10 @@ const App = () => {
     <BrowserRouter>
         <Routes>
           <Route path={"/"} element={<Main />}></Route>
+          <Route path={"/Sign"} element={<Sign />}></Route>
+          <Route path={"/Home"} element={<MainApp />}></Route>
+
+
         </Routes>
     </BrowserRouter>
   );

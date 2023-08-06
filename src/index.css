@@ -1,4 +1,29 @@
-/* src/index.css */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    a {
+      @apply cursor-pointer;
+    }
+    h1 {
+      @apply text-[50px] font-bold;
+    }
+    h2 {
+        @apply text-[1.8rem] font-bold;
+      }
+}
+
+.form-input{
+    @apply border-b border-b-gray-200 pb-0.5;
+}
+
+.error-msg{
+    @apply text-red-400 text-xs;
+}
