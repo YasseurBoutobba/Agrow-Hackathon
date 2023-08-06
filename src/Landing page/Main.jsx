@@ -7,6 +7,7 @@ import HowItWorks from './components/HowItWorks';
 import GetStarted from './components/GetStarted';
 import Feedbacks from './components/Feedbacks';
 import Footer from './components/Footer';
+
 const Main = () => {
   return (
     <>

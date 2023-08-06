@@ -19,13 +19,19 @@ const NavItems = () => {
                 : "hover:bg-gray-200 text-gray-500"
             } relative  flex gap-3 items-center cursor-pointer w-[85%] rounded-2xl flex-shrink-0 p-2`}
             onClick={() => {
-                setNavIndex(index),
+              setNavIndex(index),
                 setActiveItemIndex(index),
                 setActiveIcon(index);
             }}
           >
             <img src={index === activeIcon ? el[2] : el[1]} alt="" />
-            <p className="text-sm font-semibold ">{el[0]}</p>
+            <p
+              className={`${
+                index === activeItemIndex ? "  text-primary" : " text-gray-500"
+              } text-sm font-semibold `}
+            >
+              {el[0]}
+            </p>
             {index === activeItemIndex && (
               <img
                 src={rightarrow}

@@ -3,7 +3,6 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from './Landing page/Main';
 import Sign from './Sign up/SignUp';
-import Home from './Home page/Home';
 import MainApp from './Home page/MainApp';
 import './index.css';
 

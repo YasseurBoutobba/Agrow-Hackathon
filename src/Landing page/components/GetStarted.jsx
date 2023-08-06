@@ -1,5 +1,7 @@
 import mobileImg from "../assets/images/mobileversion.png"
 import "./getstarted.css"
+
+
 const GetStarted = () => {
     return ( 
         <div className="get-started">

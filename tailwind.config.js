@@ -11,7 +11,10 @@ module.exports = {
         lightgrey:'#696969',
         lightgreen: '#E6F0E8',
         beige: '#D7DCD9',
-        bluegrey: '808006'
+        bluegrey: '#808006',
+        cred: "#FA3131",
+        fadegreen: "#F5FCF3", 
+        callgreen:"#1A8200"
 
       }
     },
